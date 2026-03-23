@@ -1,0 +1,148 @@
+:root {
+  --bg: #edf3ff;
+  --surface: #ffffff;
+  --ink: #081737;
+  --muted: #4b5f83;
+  --line: #c7d7f0;
+  --primary: #1d8df7;
+  --primary-strong: #0f2f78;
+  --ok: #0d8e57;
+  --error: #c63645;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: radial-gradient(circle at 10% 10%, #d9e8ff 0%, transparent 46%), var(--bg);
+  color: var(--ink);
+}
+
+.admin-wrap {
+  width: min(1100px, 94vw);
+  margin: 1.3rem auto 2.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-head h1 {
+  margin: 0;
+}
+
+.admin-head p {
+  margin: 0.35rem 0;
+  color: var(--muted);
+}
+
+.admin-head a {
+  color: var(--primary-strong);
+  text-decoration-thickness: 1px;
+}
+
+.admin-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 18px 38px rgba(8, 23, 55, 0.1);
+}
+
+.admin-card h2 {
+  margin: 0 0 0.8rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.group {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: #f8fbff;
+}
+
+.group h3 {
+  margin: 0 0 0.6rem;
+}
+
+label {
+  display: grid;
+  gap: 0.28rem;
+  font-size: 0.92rem;
+  margin-bottom: 0.55rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #c2d6f3;
+  border-radius: 8px;
+  padding: 0.52rem 0.6rem;
+  font: inherit;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(29, 141, 247, 0.25);
+  border-color: var(--primary);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  color: #f8fbff;
+  background: linear-gradient(120deg, var(--primary-strong), var(--primary));
+}
+
+button:hover {
+  background: linear-gradient(120deg, #0a245f, #1a80df);
+}
+
+.status {
+  min-height: 1.2rem;
+  margin: 0.65rem 0 0;
+  font-weight: 700;
+}
+
+.status.success {
+  color: var(--ok);
+}
+
+.status.error {
+  color: var(--error);
+}
+
+.hint {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}

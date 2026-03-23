@@ -1,0 +1,69 @@
+{
+  "services": [
+    {
+      "title": "Web Development",
+      "description": "Professional and responsive websites for companies, brands, schools, and personal businesses."
+    },
+    {
+      "title": "Programming Tutorials",
+      "description": "Tutorial services on programming languages for beginners and intermediate learners."
+    },
+    {
+      "title": "Web App Sales",
+      "description": "Ready web applications like school management systems, game apps, and other business tools."
+    },
+    {
+      "title": "Maintenance and Support",
+      "description": "Post-launch fixes, updates, and support to keep your product stable and useful."
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Basic",
+      "tag": "Starter package",
+      "featured": false,
+      "features": [
+        "One-page company website",
+        "Mobile responsive design",
+        "Basic SEO setup",
+        "One week support"
+      ]
+    },
+    {
+      "name": "Standard",
+      "tag": "Growth package",
+      "featured": true,
+      "features": [
+        "Multi-page company website",
+        "Contact form backend setup",
+        "Portfolio and testimonials",
+        "One month support"
+      ]
+    },
+    {
+      "name": "Premium",
+      "tag": "Business package",
+      "featured": false,
+      "features": [
+        "Custom web application",
+        "School management or game app setup",
+        "Admin dashboard and user roles",
+        "Priority support and training"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Our school management workflow became easier within days of deployment.",
+      "name": "School Administrator"
+    },
+    {
+      "quote": "The website delivery was fast, and we started getting more inquiries immediately.",
+      "name": "Business Owner"
+    },
+    {
+      "quote": "The programming tutorial sessions were practical and easy to follow.",
+      "name": "Tutorial Student"
+    }
+  ]
+}

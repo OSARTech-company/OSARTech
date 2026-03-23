@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSARTech CMS Admin</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <main class="admin-wrap">
+    <header class="admin-head">
+      <h1>OSARTech Mini CMS</h1>
+      <p>Edit website content without touching source code.</p>
+      <a href="/">Back to website</a>
+    </header>
+
+    <section class="admin-card">
+      <label for="adminKey">Admin Key</label>
+      <input id="adminKey" type="password" placeholder="Enter admin key" />
+      <p class="hint">Default key: <code>osartech123</code>. Set <code>OSARTECH_ADMIN_KEY</code> in your environment to change it.</p>
+      <div class="button-row">
+        <button type="button" id="loadContent">Load Current Content</button>
+        <button type="button" id="saveContent">Save Changes</button>
+      </div>
+      <p id="adminStatus" class="status" aria-live="polite"></p>
+    </section>
+
+    <section class="admin-card">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="group">
+          <h3>Service 1</h3>
+          <label>Title <input id="serviceTitle1" type="text" /></label>
+          <label>Description <textarea id="serviceDesc1" rows="3"></textarea></label>
+        </article>
+        <article class="group">
+          <h3>Service 2</h3>
+          <label>Title <input id="serviceTitle2" type="text" /></label>
+          <label>Description <textarea id="serviceDesc2" rows="3"></textarea></label>
+        </article>
+        <article class="group">
+          <h3>Service 3</h3>
+          <label>Title <input id="serviceTitle3" type="text" /></label>
+          <label>Description <textarea id="serviceDesc3" rows="3"></textarea></label>
+        </article>
+        <article class="group">
+          <h3>Service 4</h3>
+          <label>Title <input id="serviceTitle4" type="text" /></label>
+          <label>Description <textarea id="serviceDesc4" rows="3"></textarea></label>
+        </article>
+      </div>
+    </section>
+
+    <section class="admin-card">
+      <h2>Pricing</h2>
+      <div class="grid">
+        <article class="group">
+          <h3>Plan 1</h3>
+          <label>Name <input id="priceName1" type="text" /></label>
+          <label>Tag <input id="priceTag1" type="text" /></label>
+          <label>Features (one per line) <textarea id="priceFeatures1" rows="5"></textarea></label>
+          <label class="checkbox"><input id="priceFeatured1" type="checkbox" /> Mark as featured plan</label>
+        </article>
+        <article class="group">
+          <h3>Plan 2</h3>
+          <label>Name <input id="priceName2" type="text" /></label>
+          <label>Tag <input id="priceTag2" type="text" /></label>
+          <label>Features (one per line) <textarea id="priceFeatures2" rows="5"></textarea></label>
+          <label class="checkbox"><input id="priceFeatured2" type="checkbox" /> Mark as featured plan</label>
+        </article>
+        <article class="group">
+          <h3>Plan 3</h3>
+          <label>Name <input id="priceName3" type="text" /></label>
+          <label>Tag <input id="priceTag3" type="text" /></label>
+          <label>Features (one per line) <textarea id="priceFeatures3" rows="5"></textarea></label>
+          <label class="checkbox"><input id="priceFeatured3" type="checkbox" /> Mark as featured plan</label>
+        </article>
+      </div>
+    </section>
+
+    <section class="admin-card">
+      <h2>Testimonials</h2>
+      <div class="grid">
+        <article class="group">
+          <h3>Testimonial 1</h3>
+          <label>Quote <textarea id="testimonialQuote1" rows="4"></textarea></label>
+          <label>Name <input id="testimonialName1" type="text" /></label>
+        </article>
+        <article class="group">
+          <h3>Testimonial 2</h3>
+          <label>Quote <textarea id="testimonialQuote2" rows="4"></textarea></label>
+          <label>Name <input id="testimonialName2" type="text" /></label>
+        </article>
+        <article class="group">
+          <h3>Testimonial 3</h3>
+          <label>Quote <textarea id="testimonialQuote3" rows="4"></textarea></label>
+          <label>Name <input id="testimonialName3" type="text" /></label>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
