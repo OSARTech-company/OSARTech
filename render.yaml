@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: osartech
+    env: python
+    plan: free
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: OSARTECH_ADMIN_KEY
+        value: osartech123

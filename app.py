@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 
-HOST = "127.0.0.1"
+HOST = os.getenv("HOST", "0.0.0.0")
 PORT = int(os.getenv("PORT", "5000"))
 PROJECT_ROOT = Path(__file__).resolve().parent
 MESSAGES_FILE = PROJECT_ROOT / "messages.csv"
